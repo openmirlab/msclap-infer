@@ -40,6 +40,6 @@ extraction; its environment and regeneration steps are in
 install that wheel in a clean environment, import the package and touch
 `MSClapSession` and `default_checkpoints()`.
 
-The repository is private at `openmirlab/msclap-infer`; no PyPI package has
-been published. Before changing visibility or publishing, obtain user sign-off
+The repository is public at `openmirlab/msclap-infer`; no PyPI package has
+been published. Before publishing a package or release, obtain user sign-off
 per the openmirlab constitution.
