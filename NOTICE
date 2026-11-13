@@ -1,0 +1,21 @@
+msclap-infer is an independent, inference-only distribution of the 2023
+Microsoft CLAP audio/text encoder. It is not affiliated with or endorsed by
+Microsoft.
+
+The following model implementation files are adapted from the MIT-licensed
+Microsoft CLAP project (msclap 1.3.4):
+  src/msclap_infer/_impl/clap.py
+  src/msclap_infer/_impl/htsat.py
+  src/msclap_infer/_impl/audio.py
+  src/msclap_infer/_impl/config.py
+  src/msclap_infer/_impl/pytorch_utils.py
+
+Changes: inference-only extraction; pinned GPT-2 config instead of loading
+pretrained GPT-2 parameters; removal of the torchlibrosa dependency via a
+pure-PyTorch frozen STFT/log-mel frontend; training and captioning surfaces
+are excluded. The original project is at https://github.com/microsoft/CLAP.
+
+No model weights are bundled. The 2023 checkpoint is downloaded separately
+from microsoft/msclap under its model-card license (MS-PL). GPT-2 configuration
+and tokenizer files are downloaded from the MIT-licensed GPT-2 model repository.
+The package code's MIT license does not change the terms for downloaded assets.
