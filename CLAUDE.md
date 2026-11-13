@@ -1,6 +1,6 @@
 # msclap-infer maintainer guide
 
-Standalone, inference-only MS-CLAP 2023 audio/text encoder. Public import:
+Standalone, inference-only MS-CLAP 2023 audio/text encoder. The 2023 model and research are by Benjamin Elizalde, Soham Deshmukh, and Huaming Wang; source is `microsoft/CLAP` and checkpoint host is `microsoft/msclap` on Hugging Face. Public import:
 `msclap_infer`; PyPI/CLI name: `msclap-infer`. Version lives only in
 `src/msclap_infer/__about__.py`. No training, evaluation, 2022 model,
 captioning model, or bundled model weights belong here.
@@ -41,5 +41,4 @@ install that wheel in a clean environment, import the package and touch
 `MSClapSession` and `default_checkpoints()`.
 
 The repository is public at `openmirlab/msclap-infer`; no PyPI package has
-been published. Before publishing a package or release, obtain user sign-off
-per the openmirlab constitution.
+been published. Install source with `pip install 'msclap-infer @ git+https://github.com/openmirlab/msclap-infer.git'`, adding `[wav]` for the WAV CLI. Load-bearing source files carry title/rationale/`Reads:` navigation headers; keep those accurate. Before publishing a package or release, obtain user sign-off per the openmirlab constitution.
