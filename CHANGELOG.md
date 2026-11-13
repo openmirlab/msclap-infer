@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Reorganized the README around upstream credit, citation, public GitHub installation, usage, weights, development, license, and support.
+
 ## 0.1.0 — 2026-11-13
 
 - Extracted the MS-CLAP 2023 audio and text encoders into a standalone inference package.
