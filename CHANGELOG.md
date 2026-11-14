@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Gate pushes and pull requests with Python 3.10–3.15 offline tests, lint, and a clean wheel-from-sdist import check; keep real-checkpoint parity separate.
 - Reorganized the README around upstream credit, citation, public GitHub installation, usage, weights, development, license, and support.
 
 ## 0.1.0 — 2026-11-13

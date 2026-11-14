@@ -25,6 +25,11 @@ must include new independent SHA-256 checks and parity evidence.
 
 Verification from the repo root:
 
+`.github/workflows/ci.yml` runs the offline test suite and lint on Python
+3.10–3.15, then verifies a wheel built from the sdist in a clean Python 3.12
+environment. The marked real-checkpoint golden is intentionally excluded from
+default CI; run it with `pytest -q -m model` for a parity review.
+
 ```bash
 pip install '.[dev]'
 pytest -q

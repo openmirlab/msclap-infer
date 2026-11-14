@@ -128,6 +128,11 @@ The package never includes checkpoint weights, training loops, evaluation datase
 
 ## Development
 
+GitHub CI runs offline tests (`pytest -m 'not model'`) and lint on Python
+3.10–3.15. A separate job builds the wheel from its sdist and imports that
+wheel in a clean Python 3.12 environment. The real-checkpoint golden remains
+an explicit additional verification step because it downloads model assets.
+
 ```bash
 pip install '.[dev]'
 pytest -q
